@@ -60,14 +60,14 @@ const computers = [
 
 // Once your data is normalized, use your DOM skills to display a card for each employee. It should display the employee name, the name of their department, and which computer they are using
 
-//
+//we need to define where all of this information is going to attach to in the html
 let company = $("#company");
-
+//for loop to go through the above data in order to write to DOM and connect the empl, dept, comp
 for (let i = 0; i < employee.length; i++) {
     let div = $("<div>")
     let employeeHeader = $("<h2>");
     employeeHeader.text(employee[i].name)
-    company.append(employeeHeader);
+    div.append(employeeHeader);
     company.append(div);
     let departmentId = employee[i].deptId;
     for (let i = 0; i < departments.length; i++) {
@@ -85,7 +85,7 @@ for (let i = 0; i < employee.length; i++) {
             let compSect = $("<li>");
             compSect.text(computers[i].compName);
             div.append(compSect);
-            div.attr("id", "comp")
+            div.attr("id", "person")
         }
     }
 

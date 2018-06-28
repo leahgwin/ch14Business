@@ -1,9 +1,9 @@
 body {
     font-family: 'Work Sans', sans-serif;
-    background: rgb(207, 198, 199);
+    background: rgb(248, 245, 245);
 }
 
-.card {
+#person {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
     margin: auto;
@@ -15,7 +15,9 @@ h1{
     color: rgb(145, 106, 112);
     font-weight: bolder;
     font-size: 45px;
-
+    background-color: rgb(207, 198, 199);
+    border-radius: 15%;
+    text-align: center;
 }
 
 h2 {
@@ -23,5 +25,6 @@ h2 {
     color: slategray;
     font-size: 24px;
     font-weight: bold;
+    text-align:center
 
 }
